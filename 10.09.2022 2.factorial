@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int n, i;
+    char c;
+    unsigned long long fact = 1;
+    printf("Enter an integer: ");
+    scanf("%d %c", &n,&c);
+
+    
+
+    if (n <= 0)
+        printf("Invalid input ");
+    else if ((c>='a' && c<='z') || (c>='A' && c<='Z'))
+    printf("invalid input");
+    else {
+        for (i = 1; i <= n; ++i) {
+            fact *= i;
+        }
+        printf("Factorial of %d = %llu", n, fact);
+    }
+
+    return 0;
+}
