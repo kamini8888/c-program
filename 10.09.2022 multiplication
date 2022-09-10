@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int m,n,i;
+	printf("Enter m and n value:");
+	scanf("%d %d",&m,&n);
+	for(i=0;i<=n;i++)
+	{
+		printf("%d X %d = %d\n",i,m,i*m);
+	}
+	if(n<0)
+	{
+		printf("inalid input");
+	}
+	return 0;
+}
