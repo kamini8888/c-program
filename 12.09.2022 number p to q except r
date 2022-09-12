@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+ int p,q,r,i;  
+ printf("\n enter p and q");
+ scanf("%d%d", &p, &q);
+  printf("\n enter the r value");
+ scanf("%d", &r);
+ for(i=p; i<=q; i++)
+ {
+ 	if(i%10==r)
+ 	{
+ 		continue;
+ 	
+	 }
+	 printf("\n %d",i);
+ }
+      
+return 0;
+}
