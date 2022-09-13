@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int arr[100],n,i;
+
+int *p=arr;
+printf("Enter the number of elements to store in the array: ");
+scanf("%d",&n);
+if(n<0)
+printf("invalid input");
+else
+printf("\n Elements - %d ",n);
+for (i=0;i<n;i++)
+scanf("%d",&arr[i]);
+printf(" the elements you entered: \n");
+
+for (i=0;i<n;i++)
+printf("%d\n",*(p+i));
+getch();
+}
