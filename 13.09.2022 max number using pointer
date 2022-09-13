@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+
+	int num1,num2;
+	int *p1,*p2;
+	printf("Enter any two Number: ");
+    scanf("%d%d", &num1, &num2);
+
+	p1=&num1;
+	p2=&num2;
+	if(*p1>*p2)	{
+	printf("Maximum number is %d",*p1);
+	}
+	else
+	{
+	printf("Maximum number is %d",*p2);
+	}
+        return 0;
+
+}
+
