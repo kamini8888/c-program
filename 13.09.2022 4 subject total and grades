@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main()
+{
+    int python,cprogramming,mathematics,physics;
+    float per,total; 
+
+    printf("Enter four subjects marks: ");
+    scanf("%d%d%d%d", &python,&cprogramming,&mathematics,&physics);
+    total=python + cprogramming + mathematics + physics;
+    printf("total = %.2f\n", total);
+    
+
+
+    per = (python + cprogramming + mathematics + physics) / 4.0;
+
+    printf("Aggregate = %.2f\n", per);
+
+
+    if(per >= 75)
+    {
+        printf("DISTINCTION");
+    }
+    else if(per < 75 && per>= 60)
+    {
+        printf("First division");
+    }
+
+
+    else if(per < 60 && per>=50)
+    {
+        printf("Second division");
+    }
+    else if(per <50 && per>=40 )
+    {
+        printf("Third divison");
+    }
+    else
+    {
+        printf("fail");
+    }
+
+    return 0;
+}
