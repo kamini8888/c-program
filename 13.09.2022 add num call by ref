@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+long addTwo(long *x, long *y){
+    long sum;
+    sum = *x + *y;
+    return sum;
+}
+
+int main(){
+    long a, b, sum;
+    long *p, *q;
+    
+    printf("Enter the first number: ");
+    scanf("%ld", &a);
+    printf("Enter the second number: ");
+    scanf("%ld", &b);
+    
+    sum = addTwo(&a, &b);
+    
+    printf("Sum of %ld and %ld is: %ld", a,b, sum);
+    
+    return 0;
+}
