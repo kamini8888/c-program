@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main (){
+   int num[20];
+   int i, j, a, n,len; 
+   printf("enter number of elements in an array\n");
+   scanf("%d", &n);
+   printf("Enter the elements\n");
+   for (i = 0; i < n; ++i)
+      scanf("%d", &num[i]);
+   for (i = 0; i < n; ++i){
+      for (j = i + 1; j < n; ++j){
+         if (num[i] > num[j]){
+            a = num[i];
+            num[i] = num[j];
+            num[j] = a;
+         }
+      }
+   }
+   printf("The numbers in smallest order is:\n");
+   for (i = 0; i < n; ++i){
+      printf("%d\n", num[i]);
+      
+   }
+      for (i = 0; i < len; i++) 
+        {
+            scanf("%d", &num[i]);
+        }
+ 
+        printf("\n Enter Which kth Number You want");
+        scanf("%d", &n);
+        printf("\n The %d th kth number is: %d", n, num[n - 1]);
+}
